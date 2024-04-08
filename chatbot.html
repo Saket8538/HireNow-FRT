@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiring Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #chatbot { width: 300px; margin: auto; }
+        #chat-window { height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; }
+        #user-input { width: calc(100% - 22px); }
+        <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        .chatbot-container {
+            width: 300px;
+            background: #fff;
+            margin: 30px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .chatbot-message {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .chatbot-input {
+            padding: 20px;
+        }
+        input[type="text"], input[type="email"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbot">
+        <div id="chat-window">
+            <!-- Chat messages will appear here --> <div class="chatbot-message">
+            <p>Hello! I'm here to help you apply for a job. 
+                Type your message in the box!</p>
+        </div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+        <form id="resume-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Short Message" required></textarea>
+            <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+            <button type="submit">Submit Resume</button>
+        </form>
+    </div>
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById('user-input').value;
+            document.getElementById('chat-window').innerHTML += '<p>' + userInput + '</p>';
+            // Add logic here to generate a response from the chatbot
+        }
+
+        document.getElementById('resume-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Implement form submission logic here
+            alert('Resume submitted!');
+        });
+    </script>
+</body>
+</html>
