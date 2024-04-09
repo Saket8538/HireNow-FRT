@@ -27,6 +27,7 @@
 - HTML
 - CSS
 - Javascript
+## Azure service used -Azure static web apps,resource group
 ## Azure Static Website-
 
 - Project Website link-https://gray-plant-0b4ca6610.5.azurestaticapps.net/
