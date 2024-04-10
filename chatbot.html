@@ -5,77 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiring Chatbot</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        #chatbot { width: 300px; margin: auto; }
-        #chat-window { height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; }
-        #user-input { width: calc(100% - 22px); }
-        <style>
-        /* Add your CSS styling here */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-        }
-        .chatbot-container {
-            width: 300px;
-            background: #fff;
-            margin: 30px auto;
+        /* Add your custom CSS styles here */
+        .chat-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .chatbot-message {
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-        }
-        .chatbot-input {
-            padding: 20px;
-        }
-        input[type="text"], input[type="email"] {
-            width: calc(100% - 22px);
+        .user-message {
+            background-color: #f0f0f0;
             padding: 10px;
+            border-radius: 5px;
             margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 3px;
         }
-        button {
-            background-color: #5cb85c;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
+        .bot-message {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <div id="chatbot">
-        <div id="chat-window">
-            <!-- Chat messages will appear here --> <div class="chatbot-message">
-            <p>Hello! I'm here to help you apply for a job. 
-                Type your message in the box!</p>
+    <div class="chat-container">
+        <div class="bot-message">
+            <p>Hello! How can I assist you today?</p>
         </div>
+        <div class="user-message">
+            <p>User: Hi, I have a question about job openings.</p>
         </div>
-        <input type="text" id="user-input" placeholder="Type your message here...">
-        <button onclick="sendMessage()">Send</button>
-        <form id="resume-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Short Message" required></textarea>
-            <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
-            <button type="submit">Submit Resume</button>
-        </form>
+        <!-- Add more chat messages here -->
     </div>
+    <!-- Add your JavaScript logic for handling user input and bot responses -->
     <script>
-        function sendMessage() {
-            var userInput = document.getElementById('user-input').value;
-            document.getElementById('chat-window').innerHTML += '<p>' + userInput + '</p>';
-            // Add logic here to generate a response from the chatbot
+        // Example JavaScript code (you can replace this with your own logic)
+        const chatContainer = document.querySelector('.chat-container');
+        const userMessage = document.querySelector('.user-message');
+        const botMessage = document.querySelector('.bot-message');
+
+        // Simulate bot response
+        function handleUserInput() {
+            const userInput = prompt('Enter your message:');
+            if (userInput) {
+                userMessage.innerHTML = `<p>User: ${userInput}</p>`;
+                // Simulate bot response (replace with actual backend logic)
+                setTimeout(() => {
+                    botMessage.innerHTML = '<p>Bot: Thank you for your question. Our team will get back to you soon!</p>';
+                }, 1000);
+            }
         }
 
-        document.getElementById('resume-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // Implement form submission logic here
-            alert('Resume submitted!');
-        });
+        // Example: Trigger user input on page load (you can use buttons or other UI elements)
+        handleUserInput();
     </script>
 </body>
 </html>
