@@ -3,61 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiring Chatbot</title>
+    <title>Hiring Website Chatbot</title>
     <style>
-        /* Add your custom CSS styles here */
-        .chat-container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #chatbox {
+            background-color: #fff;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 20px;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            overflow-y: scroll;
+            height: 300px;
         }
-        .user-message {
-            background-color: #f0f0f0;
+
+        #user-input {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 600px;
             padding: 10px;
-            border-radius: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
             margin-bottom: 10px;
         }
-        .bot-message {
-            background-color: #e0e0e0;
+
+        button {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 600px;
             padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="chat-container">
-        <div class="bot-message">
-            <p>Hello! How can I assist you today?</p>
-        </div>
-        <div class="user-message">
-            <p>User: Hi, I have a question about job openings.</p>
-        </div>
-        <!-- Add more chat messages here -->
-    </div>
-    <!-- Add your JavaScript logic for handling user input and bot responses -->
-    <script>
-        // Example JavaScript code (you can replace this with your own logic)
-        const chatContainer = document.querySelector('.chat-container');
-        const userMessage = document.querySelector('.user-message');
-        const botMessage = document.querySelector('.bot-message');
+    <h1>Welcome to the HireNow Chatbot</h1>
+    <p><b>Ask me any questions related to job opportunities, applications, or company details!</b></p>
 
-        // Simulate bot response
+    <script>
         function handleUserInput() {
-            const userInput = prompt('Enter your message:');
-            if (userInput) {
-                userMessage.innerHTML = `<p>User: ${userInput}</p>`;
-                // Simulate bot response (replace with actual backend logic)
-                setTimeout(() => {
-                    botMessage.innerHTML = '<p>Bot: Thank you for your question. Our team will get back to you soon!</p>';
-                }, 1000);
+            const userInput = document.getElementById('user-input').value;
+            const chatbox = document.getElementById('chatbox');
+
+            // Add logic to handle user input and generate responses
+            // For demonstration purposes, let's provide some sample questions and answers:
+            if (userInput.toLowerCase().includes('hello')) {
+                chatbox.innerHTML += '<p><strong>Chatbot:</strong> Hi this is HireNow bot.How may I assist you?</p>';
+            }
+              else if (userInput.toLowerCase().includes('job openings')) {
+                chatbox.innerHTML += '<p><strong>Chatbot:</strong> We currently have openings for software engineers and data analysts. Would you like more details?</p>';
+            } else if (userInput.toLowerCase().includes('application process')) {
+                chatbox.innerHTML += '<p><strong>Chatbot:</strong> To apply, visit our website and submit your resume through the online form. Our team will review it and get back to you.</p>';
+            } else if (userInput.toLowerCase().includes('company culture')) {
+                chatbox.innerHTML += '<p><strong>Chatbot:</strong> Our company values collaboration, innovation, and work-life balance. We organize regular team events and encourage professional growth.</p>';
+            } else {
+                chatbox.innerHTML += '<p><strong>Chatbot:</strong> I apologize, but I don\'t have information on that topic. Please feel free to ask another question!</p>';
             }
         }
-
-        // Example: Trigger user input on page load (you can use buttons or other UI elements)
-        handleUserInput();
     </script>
+
+    <div id="chatbox">
+        <!-- Chatbot responses will appear here -->
+    </div>
+
+    <input type="text" id="user-input" placeholder="Ask a question...">
+    <button onclick="handleUserInput()">Submit</button>
 </body>
 </html>
