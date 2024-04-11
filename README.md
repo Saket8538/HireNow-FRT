@@ -46,3 +46,15 @@
 - This website gives them the easy login process as well as direct interaction with the recuriters with easy messaging and categorywise jobs search interface.
 # Screenshots
 ![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(148).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(149).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(150).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(151).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(152).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(153).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(154).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(155).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(156).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(157).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(158).png)
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(159).png)
+
