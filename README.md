@@ -44,3 +44,5 @@
 ## Solution
 
 - This website gives them the easy login process as well as direct interaction with the recuriters with easy messaging and categorywise jobs search interface.
+# Screenshots
+![Home](https://github.com/Saket8538/HireNow-FRT/blob/main/img/Screenshot%20(148).png)
