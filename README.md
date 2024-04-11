@@ -32,7 +32,7 @@
 
 - Project Website link-https://gray-plant-0b4ca6610.5.azurestaticapps.net/
 
-- Project demo link-https://www.loom.com/share/f92e2fc5b1da4f9ab4e916d9ca0058d6?sid=2e01243f-e668-4af3-9e59-4f7cd97790e2
+- Project demo link-[https://www.loom.com/share/2964abea5b7f415aa98a1312e843f2b9?sid=b071b20e-a612-4500-86c3-5c3986b0af10](https://www.loom.com/share/2964abea5b7f415aa98a1312e843f2b9?sid=8a9c68bc-09db-423b-b269-4b60c8a1c21d)
 
 
 ## Project Description
